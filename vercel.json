@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "framework": "create-react-app",
+  "functions": {
+    "api/chat.js": {
+      "maxDuration": 60
+    }
+  }
+}
