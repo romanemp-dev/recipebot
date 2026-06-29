@@ -772,7 +772,7 @@ function FormattedRecipe({ text }) {
         }
 
         // 2. Нумерованный шаг "1. ..." или "1) ..."
-        const stepMatch = line.match(/^(\d+)[\.\)]\s+(.*)$/);
+        const stepMatch = line.match(/^(\d+)[.)]\s+(.*)$/);
         if (stepMatch) {
           return (
             <div key={idx} style={styles.recipeStep}>

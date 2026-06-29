@@ -18,7 +18,6 @@ const PH_KEY = process.env.REACT_APP_POSTHOG_KEY;
 const PH_HOST = process.env.REACT_APP_POSTHOG_HOST || 'https://eu.i.posthog.com';
 
 let initialized = false;
-let posthog = null;
 
 // === Инициализация ===
 // Вызывается один раз при загрузке приложения.
@@ -80,7 +79,6 @@ export function initAnalytics() {
         disable_session_recording: false,
       });
 
-      posthog = ph;
       console.log('[analytics] PostHog initialized');
     } catch (e) {
       console.warn('[analytics] PostHog init failed:', e);
